@@ -1,0 +1,9 @@
+streamlit
+streamlit_extras
+scikit-learn>=1.4.1
+sentence-transformers>=2.5.1
+numpy>=1.26.4
+joblib>=1.3.2
+polars
+wordcloud
+path

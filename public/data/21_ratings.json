@@ -1,0 +1,1 @@
+{"columns":[{"name":"Group","datatype":"String","bit_settings":"","values":["21","21","21","21","21"]},{"name":"Rating","datatype":"String","bit_settings":"","values":["2 Star","4 Star","1 Star","3 Star","5 Star"]},{"name":"Count","datatype":"Int32","bit_settings":"","values":[732823,4776369,263802,2899743,4930251]}]}

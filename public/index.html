@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Genre Genius</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="../index.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <div id="logo"><img src="./img/logo.png"></div>
+
+    <div id="intro_copy">
+      <p></p>
+      
+      <p id="citation"></p>
+    </div>
+
+    <div id="form">
+        <label for="description">Enter your description:</label><br>
+        <input type="text" id="description" name="description"><br><br>
+        <button id="submit" class="btn-42" onclick="process_description()">Generate Genre Genius</button>
+    </div>
+
+    <div id="report">
+    <iframe title="manual" width="70%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMzNiYjdhNTQtMjk5Ny00OWZiLTkwNTctNGRmMjQ5ZjdiZGI3IiwidCI6Ijg1OTY4ZGRmLTkzYTQtNDRmZS1iYzhmLTBkNzhiYjhlZjRjZSIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+    <p>Don't have a book ready to publish? Try one of these:</p>
+
+    <div id="suggestions">
+      
+      <button class="copy_button" onclick="copy_text(1)" id="copy_button1">Copy</button>
+      <div class="copypaste">
+        <p id="copypaste1">Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten.</p>
+        <p>-<em>The Fault In Our Stars</em>, John Green</p>
+      </div>
+
+      <button class="copy_button" onclick="copy_text(2)" id="copy_button2">Copy</button>
+      <div class="copypaste">
+        <p id="copypaste2">Six days ago, astronaut Mark Watney became one of the first people to walk on Mars. Now, he’s sure he’ll be the first person to die there. After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds himself stranded and completely alone with no way to even signal Earth that he’s alive—and even if he could get word out, his supplies would be gone long before a rescue could arrive. Chances are, though, he won’t have time to starve to death. The damaged machinery, unforgiving environment, or plain-old “human error” are much more likely to kill him first. But Mark isn’t ready to give up yet. Drawing on his ingenuity, his engineering skills — and a relentless, dogged refusal to quit — he steadfastly confronts one seemingly insurmountable obstacle after the next. Will his resourcefulness be enough to overcome the impossible odds against him?</p>
+      </div>
+      
+      <button class="copy_button" onclick="copy_text(3)" id="copy_button3">Copy</button>
+      <div class="copypaste">
+        <p id="copypaste3">Mankiw's "Macroeconomics" is popular, widely adopted and well-known for clearly communicating the principles of Macroeconomics in a concise and accessible way. The sixth edition maintains the core features that have made it a best-selling Macroeconomics text - a balance of coverage between short and long-run issues, an integration of Keynesian and classical ideas, a variety of simple models and the incorporation of real world issues and data through case studies and FYI boxes.</p>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
