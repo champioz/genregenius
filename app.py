@@ -4,7 +4,10 @@ import streamlit.components.v1 as components
 from streamlit_extras.stylable_container import stylable_container
 
     
-st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
+st.set_page_config(layout="wide", 
+                   initial_sidebar_state="collapsed",
+                   page_title='Genre Genius',
+                   page_icon='./public/img/favicon.png')
 st.markdown(
     """
     <style>

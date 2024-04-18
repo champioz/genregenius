@@ -6,7 +6,7 @@ from datetime import datetime
 import streamlit
 
 def classify_input(input_description:str) -> str:
-    embed_model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+    embed_model = SentenceTransformer('all-mpnet-base-v2')
     RFmod = load('./public/scripts/rfc.joblib')
 
     embedded = embed_model.encode(input_description)
