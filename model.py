@@ -7,7 +7,7 @@ import streamlit
 
 def classify_input(input_description:str) -> str:
     embed_model = SentenceTransformer('all-mpnet-base-v2')
-    RFmod = load('./public/scripts/rfc.joblib')
+    RFmod = load('./public/scripts/xgboost.pkl')
 
     embedded = embed_model.encode(input_description)
     embedded = np.pad(embedded, (0, 768 - len(embedded)), 'constant').reshape(1,-1)

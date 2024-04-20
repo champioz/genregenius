@@ -46,10 +46,11 @@ with col_main2:
         with st.form("desc", True, border=False) as desc_form:
             
             DESC = st.text_area("Enter your description:", height=200, key="desc")
+            st.session_state['DESC'] = DESC
             submitted = st.form_submit_button("Submit")
 
     st.write('''<br><br>
-    Not an author but want to try? Use one of these (hover and click to copy):   
+    Not an author but want to try? Use one of these:<br><em>(Hover and click to copy)</em>   
     ''', unsafe_allow_html=True)
 
     if DESC:
@@ -70,25 +71,24 @@ with stylable_container(
     
     with col1:
         st.code('''
-
-        Despite the tumor-shrinking medical miracle that has bought her a few years, Hazel has never been anything but terminal, her final chapter inscribed upon diagnosis. But when a gorgeous plot twist named Augustus Waters suddenly appears at Cancer Kid Support Group, Hazel's story is about to be completely rewritten.
+        Harriet Vanger, a scion of one of Sweden’s wealthiest families disappeared over forty years ago. All these years later, her aged uncle continues to seek the truth. He hires Mikael Blomkvist, a crusading journalist recently trapped by a libel conviction, to investigate. He is aided by the pierced and tattooed punk prodigy Lisbeth Salander. Together they tap into a vein of unfathomable iniquity and astonishing corruption. An international publishing sensation, Stieg Larsson’s The Girl with the Dragon Tattoo combines murder mystery, family saga, love story, and financial intrigue into one satisfyingly complex and entertainingly atmospheric novel.
         ''', language=None)
-        st.write('-<em>The Fault In Our Stars</em>, John Green', unsafe_allow_html=True)
+        st.write('-<em>The Girl with the Dragon Tattoo</em>, Stieg Larsson', unsafe_allow_html=True)
     
     with col2:
         st.code('''
-        Six days ago, astronaut Mark Watney became one of the first people to walk on Mars. Now, he’s sure he’ll be the first person to die there. After a dust storm nearly kills him and forces his crew to evacuate while thinking him dead, Mark finds himself stranded and completely alone with no way to even signal Earth that he’s alive—and even if he could get word out, his supplies would be gone long before a rescue could arrive. Chances are, though, he won’t have time to starve to death.
+        Augustus Everett is an acclaimed author of literary fiction. January Andrews writes bestselling romance. When she pens a happily ever after, he kills off his entire cast. They’re polar opposites. In fact, the only thing they have in common is that for the next three months, they’re living in neighboring beach houses, broke, and bogged down with writer’s block. Until, one hazy evening, one thing leads to another and they strike a deal designed to force them out of their creative ruts: Augustus will spend the summer writing something happy, and January will pen the next Great American Novel. She’ll take him on field trips worthy of any rom-com montage, and he’ll take her to interview surviving members of a backwoods death cult (obviously). Everyone will finish a book and no-one will fall in love. Really.
         ''', language=None)
-        st.write('-<em>The Martian</em>, Andy Weir', unsafe_allow_html=True)
+        st.write('-<em>Beach Read</em>, Emily Henry', unsafe_allow_html=True)
 
     with col3:
         st.code('''
-        When Tate Collins meets airline pilot Miles Archer, she knows it isn’t love at first sight. They wouldn’t even go so far as to consider themselves friends. The only thing Tate and Miles have in common is an undeniable mutual attraction. Once their desires are out in the open, they realize they have the perfect set-up. He doesn’t want love, she doesn’t have time for love, so that just leaves the sex. Their arrangement could be surprisingly seamless, as long as Tate can stick to the only two rules Miles has for her. Never ask about the past. Don’t expect a future.
+        For years, rumors of the “Marsh Girl” haunted Barkley Cove, a quiet fishing village. Kya Clark is barefoot and wild; unfit for polite society. So in late 1969, when the popular Chase Andrews is found dead, locals immediately suspect her. But Kya is not what they say. A born naturalist with just one day of school, she takes life's lessons from the land, learning the real ways of the world from the dishonest signals of fireflies. But while she has the skills to live in solitude forever, the time comes when she yearns to be touched and loved. Drawn to two young men from town, who are each intrigued by her wild beauty, Kya opens herself to a new and startling world—until the unthinkable happens.
         ''', language=None)
-        st.write('-<em>Ugly Love</em>, Colleen Hoover', unsafe_allow_html=True)
+        st.write('-<em>Where the Crawdads Sing</em>, Delia Owens', unsafe_allow_html=True)
       
       
-cols2 = st.columns([1, 6, 1])
+cols2 = st.columns([1, 2, 1])
 
 with cols2[1]:  
 

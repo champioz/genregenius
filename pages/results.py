@@ -63,6 +63,7 @@ if 'LABEL' not in st.session_state:
     st.switch_page('app.py')
     
 LABEL = st.session_state['LABEL']
+DESC = st.session_state['DESC']
         
 datasheet, label_desc, sentences, timedata, words, ratings = read_data(LABEL)
 
@@ -82,11 +83,24 @@ with col_main2:
     '''
 
     st.markdown(hide_img_fs, unsafe_allow_html=True)
+    
+    st.write('The description you input:')
+    
+    with stylable_container(
+    "codeblock",
+    """
+    code {
+        white-space: pre-wrap !important;
+    }
+    """,
+    ):
+        st.code(DESC, language=None)
+    st.write('<br>', unsafe_allow_html=True)
      
 
 ## BODY ##
 
-cols = st.columns([1, 8, 1])
+cols = st.columns([1, 1, 7, 1])
 
 with cols[1]:
     if st.button("Back"):
@@ -172,6 +186,7 @@ cols2 = st.columns([1, 6, 1])
 with cols2[1]:
     
     st.write('<h4>Popularity Distribution</h4>', unsafe_allow_html=True)
+    st.write("This plot shows how many books in this group of similar titles were rated, reviewed, or saved to a Goodreads user's bookshelf. Each bin in the histogram shows how many books were saved by N users, where N is the count given on the x-axis.")
 
 
 cols2 = st.columns([1, 3, 3, 1])
