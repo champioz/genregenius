@@ -8,3 +8,4 @@ polars
 wordcloud
 path
 pandas
+xgboost
