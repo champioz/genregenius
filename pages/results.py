@@ -262,8 +262,7 @@ with cols2[1]:
         datasheet.filter(
             (pl.col('Pub Date').dt.year() >= lower2) & (pl.col('Pub Date').dt.year() <= upper2)
             ).select(
-            ['Title', 
-             'Authors', 
+            ['Title',
              'Pub Date', 
              'Avg Rating', 
              '# of Bookshelves', 
